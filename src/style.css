@@ -1,0 +1,142 @@
+
+body{
+    
+    background-color: rgb(15, 14, 14);
+    color: white;
+    /* font-family: "Source Sans Pro", sans-serif; */
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+.card{
+    background-color: rgb(15, 14, 14);
+    padding: 5rem 0 0;
+}
+.card:nth-child(){
+    padding: 2rem 0 0;
+}
+h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 30px;
+}
+/* .scroll-pics{
+    padding: 0 5px 0 5px;
+    margin: 0;
+} */
+/* SlidingImages Styles */
+.image-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    width: 100%; /* Full width */
+    white-space: nowrap; /* Prevent line breaks */
+    scrollbar-width: none; /* Hide scrollbar for Firefox and some browsers */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    margin-bottom: 20px;
+}
+
+/* Hide the scrollbar for WebKit-based browsers (Chrome, Safari) */
+.image-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style each image within the container */
+.image-container img {
+    width: 180px;
+    height: 320px; 
+    padding-left: 1rem;
+    padding-top: 1rem;
+    /* height: 168px;
+    width: 299px; */
+    margin: auto;
+    
+}
+.poster:hover {
+    cursor:pointer;
+}
+.image-title{
+    width: 180px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin-top: 2px;
+}
+
+.movie-detail-image{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 80vh;
+    /* background-color: red; */
+}
+
+/* Gradient overlay style */
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%; /* Adjust the width as needed */
+    height: 100%; /* Cover the entire height of the div */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), transparent); /* Dark, translucent gradient */
+    background-size: cover;
+}
+  
+/* Text style */
+.text {
+position: absolute;
+top: 60%; /* Adjust the vertical position of the text */
+left: 5%; /* Adjust the horizontal position of the text */
+transform: translateY(-50%); /* Center text vertically */
+width: 40%;
+color: white; /* Text color */
+font-size: 15px; /* Adjust the font size as needed */
+line-height: 1.5rem;
+font-family: "Montserrat", sans-serif;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+.text h3{
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+}
+.pg{
+    border: 1px solid white;
+}
+
+.card-title,
+.card-text {
+  white-space: nowrap; /* Prevent text from wrapping by default */
+  overflow: hidden;  /* Hide overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis (...) for long text that overflows */
+}
+
+#inp{
+    position: relative;
+    margin-left: 55%;
+    min-width: 33dvw;
+    text-align: left;
+    overflow-x: hidden;
+}
+.carouselbtn{
+    position: sticky;
+    border:3px solid red;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+.next{
+    left:88%;
+}
+
+@media (max-width: 768px) {
+#overview {
+      /* Adjust font size for smaller screens */
+      font-size: 3vw; /* You can adjust this value */
+      /* background-color: red; */
+    }
+  }
