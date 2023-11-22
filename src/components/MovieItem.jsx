@@ -43,7 +43,7 @@ function MovieItem(props) {
 
   return (
     <div className="image-container card mb-3 col-lg-3 col-md-4 col-sm-6" style={{ width: "18rem", color:"white", margin:"auto"}}>
-      <img src={imagesrc()} className="card-img-top" alt="..." />
+      <img src={imagesrc()} loading="lazy" className="card-img-top" alt="..." />
       <div className="card-body">
         <h5 className="card-title" style={{width:"100%"}}>{props.title}</h5>
         <p className="card-text">{getGenreNamesByIds(props.genre_ids).join(', ')}</p><Link to="/moviedetails" state={{all:props.all}}>
